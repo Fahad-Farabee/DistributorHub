@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distributor Profile</title>
+    <link rel="stylesheet" href="landing.css">
+</head>
+<body>
+        <!-- navbar -->
+        <nav class="navbar">
+            <div class="nav-cont">
+                <div class="logo-section">
+                    <div class="logo"></div>
+                    <span class="brand-name">Distributor's Hub</span>
+                </div>
+                <div class="menu">
+                    <a href="#" class="menu-item">Cart</a>
+                    <a href="#" class="menu-item">Home</a>
+                    <!-- <a href="#" class="menu-item">SignIn</a> -->
+                    <div class="dropdown">
+                        <a href="#" class="menu-item dropdown-toggle">Profile</a>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">Orders</a>
+                            <a href="#" class="dropdown-item">My Profile</a>
+                            <a href="#" class="dropdown-item">Log Out</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <script>
+            // JavaScript to toggle the dropdown menu
+            document.querySelector('.dropdown-toggle').addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector('.dropdown-menu').classList.toggle('show');
+            });
+        </script>
+
+        <!-- Distributor Profile -->
+        <div class="profile">
+            <div class="profile-cont">
+                <div class="profile-image-cont">
+                    <img class="profile-image" src="assets/img/profile-pic.jpg">
+                </div>
+                <div class="profile-details-cont">
+                    <div class="profile-info"><strong>Name:</strong>S.M.Fahad Farabee</div>
+                    <div class="profile-info"><strong>Phone Number:</strong>011222121</div>
+                    <div class="profile-info"><strong>Email:</strong>fahad@gmail.com</div>
+                    <div class="profile-info"><strong>Distributor Id:</strong>0123456789</div>
+                    <div class="profile-info"><strong>Office Name:</strong>fahad Store</div>
+                    <div class="profile-info"><strong>Office Address:</strong>123/1,west madani avenue</div>
+                </div>
+                <div class="edit-profile">
+                    <button class="edit-profile-btn">Edit</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- my items -->
+        <!-- <div class="my-items">
+            <button class="arrow-left-btn"><i class="arrow left"></i></i></button>
+            <div class="my-items-cont">
+                <div class="my-items-box">
+                    <div class="my-items-image">
+                        <img src="assets/img/candy-chocolate.webp" alt="img">
+                    </div>
+                    <div class="my-items-details-cont">
+                        <div class="my-items-info"><strong>Pran pickle</strong></div>
+                        <div class="my-items-info">Quantity: 200 gm</div>
+                        <div class="my-items-info">Region: X</div>
+                        <div class="my-items-info">Copmany: Y</div>
+                        <div class="my-items-info">Price per piece: 100tk</div>
+                        <div class="my-items-info">Type: A</div>
+                    </div>
+                </div>
+                <div class="my-items-box">
+                    <div class="my-items-image">
+                        <img src="assets/img/candy-chocolate.webp" alt="img">
+                    </div>
+                    <div class="my-items-details-cont">
+                        <div class="my-items-info"><strong>Pran pickle</strong></div>
+                        <div class="my-items-info">Quantity: 200 gm</div>
+                        <div class="my-items-info">Region: X</div>
+                        <div class="my-items-info">Copmany: Y</div>
+                        <div class="my-items-info">Price per piece: 100tk</div>
+                        <div class="my-items-info">Type: A</div>
+                    </div>
+                </div>
+            </div>
+            <button class="arrow-right-btn"><i class="arrow right"></i></button>
+        </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        <div class="my-items-btns">
+            <button class="items-btn">Edit Item</button>
+            <button class="items-btn">Add Item</button>
+        </div>
+</body>
+</html>

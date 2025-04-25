@@ -1,0 +1,115 @@
+<script setup>
+/*     import { ref, onMounted } from 'vue';
+    const showOverlay = ref(false);
+    const toggleOverlay = () =>{
+        showOverlay.value = !showOverlay.value;
+    }
+    const editProfile = ()=>{
+        showOverlay.value = !showOverlay.value;
+    }    
+    const profileInfo = ref([]);
+    const fetchProfileInfo = async () => {
+        const userId = localStorage.getItem('userId');
+        if (!userId) {
+            alert("User ID not found. Please log in again.");
+            return;
+        }
+
+        try {
+            const response = await fetch(`http://localhost/distributorHub/showRetailerProfile.php?userId=${userId}`);
+            const data = await response.json();
+            if (data.success) {
+                profileInfo.value = data.data; 
+            } else {
+                console.error(data.message);
+            }
+    } catch (error) {
+        console.error('Error fetching profile:', error);
+    }
+    };
+    onMounted(fetchProfileInfo); */
+
+   
+
+</script>
+
+<template>
+   <!--  <div class="retailer-profile-details">
+        <div class="retailer-profile-details-cont">
+            <div class="retailer-profile-details-image">
+                <img :src="`http://localhost/${profileInfo.retailerProfilePic}`" alt=""/>
+            </div>
+            <div class="retailer-profile-details-info">
+                <div class="retailer-profile-details-subtitle"><strong>Name: </strong>{{ profileInfo.userName}}
+                </div>
+                <div class="retailer-profile-details-subtitle"><strong>Store Name: </strong>{{ profileInfo.storeName}}
+                </div>
+                <div class="retailer-profile-details-subtitle"><strong>Store Address: </strong>{{ profileInfo.storeAddress}}
+                </div>
+                <div class="retailer-profile-details-subtitle"><strong>Contact No: </strong>{{ profileInfo.contactNumber}}
+                </div>
+                <div class="retailer-profile-details-subtitle"><strong>Region: </strong>{{ profileInfo.region}}
+                </div>
+                <div class="retailer-profile-details-subtitle"><strong>Division: </strong>{{ profileInfo.division}}
+                </div>
+                <div class="retailer-profile-details-subtitle"><strong>District: </strong>{{ profileInfo.district}}
+                </div>
+                <div class="retailer-profile-details-subtitle"><strong>City: </strong>{{ profileInfo.city}}
+                </div>
+            </div>
+            <div class="retailer-profile-details-edit"><button class="retailer-profile-details-edit-btn" @click="toggleOverlay">Edit</button></div>
+        </div>
+
+        <div v-if="showOverlay" class="edit-profile-overlay">
+            <div class="edit-profile-overlay-cont">
+                <form @submit.prevent="handleSubmit" class="edit-profile-form">
+                <div class="edit-profile-form-group">
+                    <input  type="text" placeholder="Enter your name *">
+                </div>
+                <div class="edit-profile-form-group">
+                    <input  type="text" placeholder="Store Name *">
+                </div>
+                <div class="edit-profile-form-group">
+                    <input type="text" placeholder="Store Address *">
+                </div>
+                <div class="edit-profile-form-group">
+                    <select >
+                        <option value="" disabled >Division *</option>
+                        <option value="division1">Division 1</option>
+                        <option value="division2">Division 2</option>
+                        <option value="division3">Division 3</option>
+                    </select>
+                </div>
+                <div class="edit-profile-form-group">
+                    <select >
+                        <option value="" disabled >District *</option>
+                        <option value="district1">District 1</option>
+                        <option value="district2">District 2</option>
+                        <option value="district3">District 3</option>
+                    </select>
+                </div>
+                <div class="edit-profile-form-group">
+                    <select >
+                        <option value="" disabled >City *</option>
+                        <option value="city1">City 1</option>
+                        <option value="city2">City 2</option>
+                        <option value="city3">City 3</option>
+                    </select>
+                </div>
+                <div class="edit-profile-form-group">
+                    <select >
+                        <option value="" disabled >Region *</option>
+                        <option value="region1">Region 1</option>
+                        <option value="region2">Region 2</option>
+                        <option value="region3">Region 3</option>
+                    </select>
+                </div>
+                <div class="edit-profile-form-group">
+                    <input  type="password" placeholder="Password *">
+                </div>
+                <button type="submit" class="edit-profile-btn-submit" @click="editProfile" >Confirm</button>
+            </form>
+            </div>
+        </div>
+    </div> -->
+</template>

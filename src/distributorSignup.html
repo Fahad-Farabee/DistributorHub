@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>distributor Sign up</title>
+    <link rel="stylesheet" href="landing.css">
+</head>
+<body>
+        <!-- navbar -->
+        <nav class="navbar">
+            <div class="nav-cont">
+                <div class="logo-section">
+                    <div class="logo"></div>
+                    <span class="brand-name">Distributor's Hub</span>
+                </div>
+                <div class="menu">
+                    <a href="#" class="menu-item">Cart</a>
+                    <a href="#" class="menu-item">Home</a>
+                    <a href="#" class="menu-item">SignIn</a>
+                    <div class="dropdown">
+                        <a href="#" class="menu-item dropdown-toggle">SignUp</a>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">Distributor</a>
+                            <a href="#" class="dropdown-item">Retailer</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <script>
+            // JavaScript to toggle the dropdown menu
+            document.querySelector('.dropdown-toggle').addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector('.dropdown-menu').classList.toggle('show');
+            });
+        </script>
+
+            <!-- distributorSignup -->
+    <div class="Signup">
+        <div class="form-container">
+            <form class="registration-form">
+                <div class="profile-pic">
+                    <img src="https://via.placeholder.com/80" alt="Profile Picture">
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Enter your name *" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Contact No *" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="NID No *" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Store Name *" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Store Address *" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Trade License No *" required>
+                </div>
+                <div class="form-group">
+                    <select required>
+                        <option value="" disabled selected>Division *</option>
+                        <option value="division1">Division 1</option>
+                        <option value="division2">Division 2</option>
+                        <option value="division3">Division 3</option>q
+                    </select>
+                </div>
+                <div class="form-group">
+                    <select required>
+                        <option value="" disabled selected>District *</option>
+                        <option value="district1">District 1</option>
+                        <option value="district2">District 2</option>
+                        <option value="district3">District 3</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <select required>
+                        <option value="" disabled selected>City *</option>
+                        <option value="city1">City 1</option>
+                        <option value="city2">City 2</option>
+                        <option value="city3">City 3</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="Password *" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="Confirm Password *" required>
+                </div>
+                <button type="submit" class="btn-submit">Confirm</button>
+            </form>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer class="contact-section">
+        <h2>Contact Us</h2>
+        <p>Email: <a href="mailto:distributorshub@gmail.com">distributorshub@gmail.com</a></p>
+        <p>Contact No: <a href="tel:01712345678">01712345678</a></p>
+        <p>Follow Us on</p>
+        <div class="social-icons">
+            <a href="#" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="YouTube"></a>
+            <a href="#" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"></a>
+            <a href="#" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384031.png" alt="Instagram"></a>
+        </div>
+        <p>Office: United International University</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="landing.css">
+</head>
+<body>
+<!-- navbar -->
+    <nav class="navbar">
+        <div class="nav-cont">
+            <div class="logo-section">
+                <div class="logo"></div>
+                <span class="brand-name">Distributor's Hub</span>
+            </div>
+            <div class="menu">
+                <a href="#" class="menu-item">Cart</a>
+                <a href="#" class="menu-item">Home</a>
+                <a href="#" class="menu-item">SignIn</a>
+                <div class="dropdown">
+                    <a href="#" class="menu-item dropdown-toggle">SignUp</a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item">Distributor</a>
+                        <a href="#" class="dropdown-item">Retailer</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <script>
+        // JavaScript to toggle the dropdown menu
+        document.querySelector('.dropdown-toggle').addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector('.dropdown-menu').classList.toggle('show');
+        });
+    </script>
+    <!-- searchbox -->
+    <div class="search-box">
+        <input type="text" id="search-box" placeholder="search products">
+        <button class="search-btn">Search</button>
+    </div>
+
+    <div class="login">
+        <div class="login-container">
+            <form class="login-form">
+                <div class="form-group">
+                    <label for="phone">
+                        <span class="icon">📞</span>
+                        <input type="text" id="phone" placeholder="Phone Number" required>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label for="password">
+                        <span class="icon">🔒</span>
+                        <input type="password" id="password" placeholder="Password" required>
+                    </label>
+                </div>
+                <a href="#" class="forgot-password">Forgot Password?</a>
+                <button type="submit" class="btn-login">Log In</button>
+                <p class="signup-prompt">
+                    Don’t have an account? <a href="#" class="join-link">JOIN US now</a>
+                </p>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
